@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/ablobcatattentionreverse.png">
 <meta property="article:published_time" content="2024-05-10T09:48:14.000Z">
-<meta property="article:modified_time" content="2024-05-14T15:50:19.646Z">
+<meta property="article:modified_time" content="2024-05-15T15:02:50.234Z">
 <meta property="article:author" content="Anthony Zhai">
 <meta property="article:tag" content="每日一题">
 <meta name="twitter:card" content="summary">
@@ -70,7 +70,7 @@
 
 
 
-<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2024/05/ef9d6b234113.html"><span class="title">修改我的博客</span></a><a class="item title" href="/2024/05/a8002aaa12f3.html"><span class="title">POJ 3278</span></a><a class="item title" href="/2024/05/1c8ce4d28836.html"><span class="title">洛谷 P1118</span></a></div></widget>
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2024/05/f95b7e14818a.html"><span class="title">洛谷 P1433</span></a><a class="item title" href="/2024/05/a8002aaa12f3.html"><span class="title">POJ 3278</span></a><a class="item title" href="/2024/05/1c8ce4d28836.html"><span class="title">洛谷 P1118</span></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
@@ -83,7 +83,7 @@
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
 <span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E4%BF%A1%E5%A5%A5/">信奥</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-05-10T09:48:14.000Z">2024-05-10</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-05-14T15:50:19.646Z">2024-05-14</time></span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-05-10T09:48:14.000Z">2024-05-10</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-05-15T15:02:50.234Z">2024-05-15</time></span></div></div></div>
     
     <div class="bottom only-title">
       
@@ -98,8 +98,8 @@
 <h2 id="壹、问题描述"><a href="#壹、问题描述" class="headerlink" title="壹、问题描述"></a>壹、问题描述</h2><p>在一条直线上，奶牛在 $K$ 位置，农夫在 $N$ 位置。农夫想抓住牛，他有3种移动方法：如他在 $X$ 位置，他每次可以移动到 $X-1$，$X+1$，$2X$ 的位置。问农夫最少要移动多少次才能从 $N$ 位置到达 $K$ 位置？</p>
 <h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><p>输入两个整数 $N$ 和 $K$，$ 0 &lt;= N, K &lt;= 100000$。</p>
 <h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h3><p>最少移动次数。</p>
-<h3 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例"></a>输入样例</h3><p>5 17</p>
-<h3 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例"></a>输出样例</h3><p>4</p>
+<h3 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例"></a>输入样例</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">5 17</span><br></pre></td></tr></table></figure>
+<h3 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例"></a>输出样例</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">4</span><br></pre></td></tr></table></figure>
 <h2 id="贰、题目分析"><a href="#贰、题目分析" class="headerlink" title="贰、题目分析"></a>贰、题目分析</h2><p>农夫在 $X$ 位置都有3种选择，则该农夫找奶牛的过程就是一棵搜索树，而且是一棵三叉树。以农夫在位置5，奶牛在位置17为例，这棵搜索树的部分结构如下：</p>
 <blockquote>
 <p>图表可以左右滚动查看哦。<span class="tag-plugin emoji"><img no-lazy="" class="inline lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/ablobcatattentionreverse.png"/></span></p>
@@ -195,7 +195,7 @@ V---AB</pre>
       <div class='title cap theme'>您可能感兴趣的文章</div>
     </section>
     <section class='body'>
-    <div class="related-posts"><a class="item" href="/2024/05/ef9d6b234113.html" title="修改我的博客"><span class="title">修改我的博客</span></a><a class="item" href="/2024/05/1c8ce4d28836.html" title="洛谷 P1118"><span class="title">洛谷 P1118</span></a></div></section></div>
+    <div class="related-posts"><a class="item" href="/2024/05/1c8ce4d28836.html" title="洛谷 P1118"><span class="title">洛谷 P1118</span></a><a class="item" href="/2024/05/f95b7e14818a.html" title="洛谷 P1433"><span class="title">洛谷 P1433</span></a></div></section></div>
 
 
 
